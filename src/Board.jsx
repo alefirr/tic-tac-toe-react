@@ -5,6 +5,7 @@ const EMPTY_CELLS = [null, null, null, null, null, null, null, null, null];
 
 export const Board = () => {
   const [cells, setCells] = useState(EMPTY_CELLS);
+  const [isXMove, setIsXMove] = useState(true);
 
   const resetGame = () => {
     setCells(EMPTY_CELLS);
@@ -13,8 +14,8 @@ export const Board = () => {
   return (
     <div className="game">
       <div className="board">
-        {cells.map((el, index) => (
-          <Cell key={`cell-${index}`} />
+        {cells.map((cellValue, index) => (
+          <Cell key={`cell-${index}`} value={cellValue} />
         ))}
       </div>
       <div className="control-panel">

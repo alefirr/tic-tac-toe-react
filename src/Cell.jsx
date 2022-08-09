@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const Cell = () => {
-  return <div className="cell">X</div>;
+export const Cell = ({ value }) => {
+  return <div className="cell">{value}</div>;
 };
