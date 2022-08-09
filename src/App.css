@@ -23,6 +23,16 @@
   align-items: center;
   border-radius: 15px;
   box-shadow: inset -18px -22px 83px -19px rgba(233, 8, 23, 0.6);
+  transition: 0.5s;
+}
+
+button:not([disabled]):hover {
+  transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+}
+.cell:disabled {
+  background-color: rgb(255, 127, 185);
+  color: black;
+  border: 2px solid black;
 }
 .control-panel {
   display: flex;
@@ -45,7 +55,8 @@
   border: none;
   color: aliceblue;
   font-size: large;
+  transition: 0.5s;
 }
-.current-player-state {
+p {
   border: 1px solid blueviolet;
 }
