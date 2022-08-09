@@ -1,0 +1,51 @@
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.board {
+  height: 420px;
+  width: 420px;
+  display: grid;
+  grid-template-columns: 140px 140px 140px;
+  grid-template-rows: 140px 140px 140px;
+  place-items: center;
+  margin-top: 50px;
+}
+.cell {
+  height: 130px;
+  width: 130px;
+  background-color: rgb(255, 127, 185);
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: inset -18px -22px 83px -19px rgba(233, 8, 23, 0.6);
+}
+.control-panel {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.control-panel > * {
+  width: 170px;
+  height: 45px;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-game-button {
+  background-color: blueviolet;
+  border-radius: 10px;
+  border: none;
+  color: aliceblue;
+  font-size: large;
+}
+.current-player-state {
+  border: 1px solid blueviolet;
+}
